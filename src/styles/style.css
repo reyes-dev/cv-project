@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100vw;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 2rem;
+  width: 60vw;
+}
+label {
+  padding: 1rem;
+}
+button {
+  width: fit-content;
+}
+p {
+  border-bottom: 1px solid black;
+}
+div {
+  padding: 1rem;
+}
+.info {
+  display: flex;
+  gap: 2rem;
+}
