@@ -1,13 +1,19 @@
 import React, { Component } from "react";
 
-const DisplayExperience = (props) => {
+const DisplayExperience = ({
+  companyName,
+  position,
+  mainTasks,
+  startDate,
+  endDate,
+}) => {
   return (
     <div className="info">
-      <p>Company Name: {props.companyName}</p>
-      <p>Position: {props.position}</p>
-      <p>Main Tasks: {props.mainTasks}</p>
-      <p>Start Date: {props.startDate}</p>
-      <p>End Date: {props.endDate}</p>
+      <p>Company Name: {companyName}</p>
+      <p>Position: {position}</p>
+      <p>Main Tasks: {mainTasks}</p>
+      <p>Start Date: {startDate}</p>
+      <p>End Date: {endDate}</p>
     </div>
   );
 };

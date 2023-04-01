@@ -1,25 +1,32 @@
 import React, { Component } from "react";
 
-const EditEducation = (props) => {
+const EditEducation = ({
+  schoolName,
+  studyTitle,
+  studyDate,
+  setSchoolName,
+  setStudyTitle,
+  setStudyDate,
+}) => {
   return (
     <div>
       <label>School Name:</label>
       <input
         name="schoolName"
-        onChange={(e) => props.setSchoolName(e.target.value)}
-        value={props.schoolName}
+        onChange={(e) => setSchoolName(e.target.value)}
+        value={schoolName}
       ></input>
       <label>Title of Study:</label>
       <input
         name="studyTitle"
-        onChange={(e) => props.setStudyTitle(e.target.value)}
-        value={props.studyTitle}
+        onChange={(e) => setStudyTitle(e.target.value)}
+        value={studyTitle}
       ></input>
       <label>Date of Study:</label>
       <input
         name="studyDate"
-        onChange={(e) => props.setStudyDate(e.target.value)}
-        value={props.studyDate}
+        onChange={(e) => setStudyDate(e.target.value)}
+        value={studyDate}
       ></input>
     </div>
   );

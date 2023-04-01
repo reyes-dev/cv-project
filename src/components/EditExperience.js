@@ -1,37 +1,48 @@
 import React, { Component } from "react";
 
-const EditExperience = (props) => {
+const EditExperience = ({
+  companyName,
+  position,
+  mainTasks,
+  startDate,
+  endDate,
+  setCompanyName,
+  setPosition,
+  setMainTasks,
+  setStartDate,
+  setEndDate,
+}) => {
   return (
     <div>
       <label>Company Name:</label>
       <input
         name="companyName"
-        onChange={(e) => props.setCompanyName(e.target.value)}
-        value={props.companyName}
+        onChange={(e) => setCompanyName(e.target.value)}
+        value={companyName}
       ></input>
       <label>Position:</label>
       <input
         name="position"
-        onChange={(e) => props.setPosition(e.target.value)}
-        value={props.position}
+        onChange={(e) => setPosition(e.target.value)}
+        value={position}
       ></input>
       <label>Main Tasks:</label>
       <input
         name="mainTasks"
-        onChange={(e) => props.setMainTasks(e.target.value)}
-        value={props.mainTasks}
+        onChange={(e) => setMainTasks(e.target.value)}
+        value={mainTasks}
       ></input>
       <label>Start Date:</label>
       <input
         name="startDate"
-        onChange={(e) => props.setStartDate(e.target.value)}
-        value={props.startDate}
+        onChange={(e) => setStartDate(e.target.value)}
+        value={startDate}
       ></input>
       <label>End Date:</label>
       <input
         name="endDate"
-        onChange={(e) => props.setEndDate(e.target.value)}
-        value={props.endDate}
+        onChange={(e) => setEndDate(e.target.value)}
+        value={endDate}
       ></input>
     </div>
   );

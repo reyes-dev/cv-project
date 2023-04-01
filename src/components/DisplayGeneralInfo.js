@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
-const DisplayGeneralInfo = (props) => {
+const DisplayGeneralInfo = ({ name, email, phoneNumber }) => {
   return (
     <div className="info">
-      <p>Name: {props.name}</p>
-      <p>Email: {props.email}</p>
-      <p>Phone Number: {props.phoneNumber}</p>
+      <p>Name: {name}</p>
+      <p>Email: {email}</p>
+      <p>Phone Number: {phoneNumber}</p>
     </div>
   );
 };

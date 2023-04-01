@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
-const DisplayEducation = ({ props }) => {
+const DisplayEducation = ({ schoolName, studyTitle, studyDate }) => {
   return (
     <div className="info">
-      <p>School Name: {props.schoolName}</p>
-      <p>Title of Study: {props.studyTitle}</p>
-      <p>Date of Study: {props.studyDate}</p>
+      <p>School Name: {schoolName}</p>
+      <p>Title of Study: {studyTitle}</p>
+      <p>Date of Study: {studyDate}</p>
     </div>
   );
 };
